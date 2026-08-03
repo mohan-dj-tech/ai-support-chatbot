@@ -44,8 +44,6 @@ CREATE TABLE country_mappings (
 
 COPY country_mappings FROM 'C:\Mohan_DJ_WorkSpace\Softwares\AI Project Softwares\DBDump\Country.csv' (HEADER, DELIMITER ',');
 
-
-
  CREATE TABLE IF NOT EXISTS servicenow_incidents (
                     number VARCHAR PRIMARY KEY,
                     sys_id VARCHAR,
@@ -56,5 +54,5 @@ COPY country_mappings FROM 'C:\Mohan_DJ_WorkSpace\Softwares\AI Project Softwares
                     assigned_to VARCHAR,
                     sys_created_on TIMESTAMP
                 )
-				
+
 
