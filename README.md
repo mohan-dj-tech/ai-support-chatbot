@@ -1,5 +1,4 @@
 # Support Chatbot
-
 An AI-powered support chatbot that combines data analysis capabilities with IT Service Management (ServiceNow) workflows. Built using Google ADK and Gemini.
 
 ## Architecture
