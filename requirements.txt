@@ -1,0 +1,6 @@
+google-adk
+duckdb
+pydantic-settings
+python-dotenv
+tabulate
+requests
