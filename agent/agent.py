@@ -1,9 +1,8 @@
 import sys
 from pathlib import Path
-import logging # Import logging
+import logging
 
 # Set logging level to INFO at the application's entry point
-# This will suppress DEBUG messages globally
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Add the project root to the Python path

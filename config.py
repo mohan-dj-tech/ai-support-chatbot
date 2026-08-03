@@ -10,23 +10,22 @@ class Settings(BaseSettings):
     # Google Cloud / Vertex AI Settings
     google_genai_use_vertexai: int = 1
     google_cloud_project: str = "<<Your Vertex-AI enabled GCP Project Name>>"
-    google_cloud_location: str = "us" # Restored to us-central1
+    google_cloud_location: str = "<<Your Vertex-AI enabled GCP Project Region. Ex: us>>"
     google_application_credentials: Optional[str] = None
 
     # Model & Database Configuration
-    adk_model_name: str = "gemini-3.5-flash" # Restored to gemini-3.5-flash
+    adk_model_name: str = "gemini-3.5-flash"
     cache_ttl_minutes: int = 60  # Cache TTL for Gemini system prompt caching
     duckdb_path: str = "data/analytics.duckdb"
     duckdb_read_only: bool = True
 
     # ServiceNow Configuration
-    servicenow_instance_url: Optional[str] = "https://rentokilinitialtest.service-now.com"
+    servicenow_instance_url: Optional[str] = "<<ServiceNow host>>"
     servicenow_username: Optional[str] = None
     servicenow_password: Optional[str] = None
     servicenow_client_id: Optional[str] = "<<Your ServiceNow Client ID>>"
     servicenow_client_secret: Optional[str] = "<<Your ServiceNow Client Secret>>"
 
-    # Security Guardrails (Included the new view: v_normalized_api_errors)
     max_query_limit: int = 1000
     allowed_tables: List[str] = [
         "api_error_logs",
